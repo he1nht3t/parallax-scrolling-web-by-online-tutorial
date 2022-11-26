@@ -62,6 +62,35 @@ const Info = () => {
           modi labore dolorem voluptas necessitatibus, praesentium dolores, qui
           magnam eligendi tempore, debitis quod?
         </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+          quas dignissimos. Quidem velit dolorum ducimus nihil quia rem,
+          accusamus provident dolorem pariatur omnis, explicabo in dolores iure
+          maxime eaque perferendis totam perspiciatis officiis. Ducimus animi
+          dolore eius placeat magnam? Maiores atque esse eius quasi, repellat
+          nam totam distinctio cum, ab nemo quod ex fugit corrupti unde rem eum
+          placeat deleniti ullam quaerat officiis beatae delectus! Iste aut
+          mollitia quod repudiandae, saepe unde ipsum aperiam sapiente amet
+          voluptas! Quidem, maxime quae iure asperiores sit temporibus
+          praesentium velit ad fuga beatae, impedit accusamus vero itaque ipsam
+          modi porro numquam dolore aliquid. Dicta.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+          minus fugiat iste totam, sed ad sit doloribus necessitatibus expedita
+          repellendus consectetur amet tempora saepe corporis qui vel
+          voluptatibus repudiandae at. Amet soluta impedit numquam voluptatibus
+          dolorum enim explicabo et, veritatis, perspiciatis necessitatibus vel
+          dignissimos laboriosam eligendi animi quibusdam aut ipsa libero
+          doloremque! Optio quis nobis alias odio cumque adipisci dolorum autem!
+          Sed blanditiis praesentium, tenetur reiciendis cum quidem consectetur
+          soluta obcaecati temporibus accusamus voluptas enim vitae aperiam,
+          aspernatur excepturi, dolorum porro a. Debitis perferendis ullam,
+          vitae hic alias laudantium nihil optio eos, dolore atque inventore
+          libero iusto tempora commodi enim.
+        </p>
       </span>
     </div>
   );

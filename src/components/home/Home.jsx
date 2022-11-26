@@ -2,10 +2,10 @@ import { useState } from "react";
 import "./home.css";
 
 const Home = () => {
-  const Stars = "../../../public/images/stars.png";
-  const Moon = "../../../public/images/moon.png";
-  const MountainsBehind = "../../../public/images/mountains_behind.png";
-  const MountainsFront = "../../../public/images/mountains_front.png";
+  const Stars = "/images/stars.png";
+  const Moon = "/images/moon.png";
+  const MountainsBehind = "/images/mountains_behind.png";
+  const MountainsFront = "/images/mountains_front.png";
 
   const stars = document.getElementById("stars");
   const moon = document.getElementById("moon");
