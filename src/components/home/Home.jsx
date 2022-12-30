@@ -1,43 +1,82 @@
-import { useState } from "react";
 import "./home.css";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  const Stars = "/images/stars.png";
-  const Moon = "/images/moon.png";
-  const MountainsBehind = "/images/mountains_behind.png";
-  const MountainsFront = "/images/mountains_front.png";
+    const [position, setPosition] = useState(0);
 
-  const stars = document.getElementById("stars");
-  const moon = document.getElementById("moon");
-  const mountains_behind = document.getElementById("mountains_behind");
-  const text = document.getElementById("text");
-  const mountains_front = document.getElementById("mountains_front");
+    const Stars = "/images/stars.png";
+    const Moon = "/images/moon.png";
+    const MountainsBehind = "/images/mountains_behind.png";
+    const MountainsFront = "/images/mountains_front.png";
 
-  const btn = document.getElementById("btn");
-  window.addEventListener("scroll", () => {
-    let value = window.scrollY;
+    useEffect(() => {
+        const onScroll = () => {
+            setPosition(window.scrollY);
+        };
+        window.addEventListener("scroll", onScroll);
+        return () => {
+            window.removeEventListener("scroll", onScroll);
+        };
+    }, []);
+    const star = { left: position * 0.25 + "px" };
 
-    stars.style.left = value * 0.25 + "px";
-    moon.style.top = value * 1.05 + "px";
-    mountains_behind.style.top = value * 0.5 + "px";
-    text.style.marginRight = value * 4 + "px";
-    text.style.marginTop = value * 1.5 + "px";
-    mountains_front.style.top = value * 0.3 + "px";
-    btn.style.marginTop = value * 1.5 + "px";
-  });
+    const moon = {
+        top: position * 1.05 + "px",
+        mixBlendMode: "screen",
+    };
 
-  return (
-    <section className="home" id="home">
-      <img src={Stars} alt="stars" id="stars" />
-      <img src={Moon} alt="moon" id="moon" />
-      <img src={MountainsBehind} alt="mountains" id="mountains_behind" />
-      <h2 id="text">Moon Light</h2>
-      <a href="#info" id="btn">
-        Explore
-      </a>
-      <img src={MountainsFront} alt="mountains" id="mountains_front" />
-    </section>
-  );
+    const mountains_behind = { top: position * 0.5 + "px" };
+
+    const text = {
+        marginRight: position * 4 + "px",
+        position: "absolute",
+        right: -350 + "px",
+        color: "#fff",
+        whiteSpace: "nowrap",
+        letterSpacing: 0.5 + "rem",
+        fontSize: 7.5 + "vw",
+        zIndex: 9,
+    };
+    const mountains_front = {
+        top: position * 0.3 + "px",
+        zIndex: 10,
+    };
+    const btn = {
+        marginTop: position * 1.5 + "px",
+        display: "inline-block",
+        padding: 8 + "px" + " " + 30 + "px",
+        borderRadius: 40 + "px",
+        background: "#fff",
+        color: "#2b1055",
+        fontSize: 1.5 + "rem",
+        zIndex: 9,
+        transform: "translateY(100px)",
+    };
+
+    return (
+        <section className="home" id="home">
+            <img src={Stars} style={star} alt="stars" id="stars" />
+            <img src={Moon} style={moon} alt="moon" id="moon" />
+            <img
+                src={MountainsBehind}
+                style={mountains_behind}
+                alt="mountains"
+                id="mountains_behind"
+            />
+            <h2 id="text" style={text}>
+                Moon Light
+            </h2>
+            <a href="#info" id="btn" style={btn}>
+                Explore
+            </a>
+            <img
+                src={MountainsFront}
+                style={mountains_front}
+                alt="mountains"
+                id="mountains_front"
+            />
+        </section>
+    );
 };
 
 export default Home;

@@ -1,39 +1,39 @@
 .info {
-  position: relative;
-  padding: 100px;
-  background-color: #1c0522;
+    position: relative;
+    padding: 100px;
+    background-color: #1c0522;
 }
 .info-title {
-  font-size: 3.5rem;
-  color: #fff;
-  margin-bottom: 2rem;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
 }
 .info-text {
-  font-size: 1em;
-  color: #fff;
-  text-align: justify;
+    font-size: 1em;
+    color: #fff;
+    text-align: justify;
 }
 
 @media (max-width: 576px) {
-  .info {
-    padding: 4rem;
-  }
-  .info-title {
-    font-size: 2.5rem;
-  }
-  .info-text {
-    font-size: 0.85 em;
-  }
+    .info {
+        padding: 4rem;
+    }
+    .info-title {
+        font-size: 2.5rem;
+    }
+    .info-text {
+        font-size: 0.85 em;
+    }
 }
 
 @media (max-width: 350px) {
-  .info {
-    padding: 1.5rem;
-  }
-  .info-title {
-    font-size: 1.5rem;
-  }
-  .info-text {
-    font-size: 0.75em;
-  }
+    .info {
+        padding: 1.5rem;
+    }
+    .info-title {
+        font-size: 1.5rem;
+    }
+    .info-text {
+        font-size: 0.75em;
+    }
 }

@@ -1,67 +1,28 @@
-.home {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-.home::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, #1c0522, transparent);
-  z-index: 1000;
+#home::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
 }
 .home img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
-}
-#moon {
-  mix-blend-mode: screen;
-}
-
-#text {
-  position: absolute;
-  right: -350px;
-  color: #fff;
-  white-space: nowrap;
-  letter-spacing: 0.5rem;
-  font-size: 7.5vw;
-  z-index: 9;
-}
-#mountains_front {
-  z-index: 10;
-}
-#btn {
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 40px;
-  background: #fff;
-  color: #2b1055;
-  font-size: 1.5rem;
-  z-index: 9;
-  transform: translateY(100px);
-}
-
-@media (max-width: 992px) {
-  #text {
-    font-size: 7rem;
-    right: -45rem;
-  }
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 576px) {
-}
-@media (max-width: 350px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
